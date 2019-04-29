@@ -1,0 +1,290 @@
+.forMargin{
+    margin: 3% 0%;
+}
+.forProgress{
+    background-color: #ff6e04
+}
+.forProgressText{
+    font-size: 14px;
+    color: #5A5A5A;
+}
+.getResultBtn,.getResultBtn:hover{
+    cursor: pointer;
+    color: #ff6e04;
+    border: 1px solid #ff6e04;
+    border-radius: 5px;
+    background-color: #fff; 
+}
+.getResultBtn:focus{
+    outline: none;
+}
+
+.forCircle{
+    border: 2px solid #2d7f2d;
+    border-radius: 50%;
+    font-size: 17px;
+    color: #2d7f2d;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #fff;
+}
+.forLeftRightMargin{
+    margin: 3% 3%;
+}
+.forQuestion{
+    font-family: 'Calibri-Bold', sans-serif;
+    color: #313131;
+    font-size: 30px;
+}
+.forStar{
+    color: red;
+    font-size: 30px
+}
+.forIcon{
+    color: #ccc;
+    font-size: 30px;
+    font-weight: bold;
+}
+.forIcon:hover{
+    color: #ff6e04;
+    cursor: pointer;
+}
+.forInputMargin{
+    margin: 5% 0%;
+}
+.HRAButton{
+    border: 1px solid #2d7f2d;
+    border-radius: 25px;
+    color: #2d7f2d;
+    padding: 2% 5%; 
+    margin: 2% 3%;
+    background-color: #fff;
+}
+.HRAButton:hover,.HRAButton:focus{
+    color: #fff;
+    background-color: #2d7f2d;
+    outline: none;
+}
+.forHRANextButton{
+    padding: 2% 10% !important;
+}
+.forProgressBar{
+    background-color: #2d7f2d;
+    border-radius:25px; 
+}
+.forBorder{
+    border-top: 3px solid #2d7f2d !important;
+    border: 1px solid rgb(208, 208, 208);
+    background-color: rgb(255, 245, 203);
+}
+.borderToIcon{
+    border-right: 1px solid #d0d0d0;
+    background-color: #f6eab7;
+}
+.forDisIcon{
+    font-size: 40px;
+    font-weight: bold;
+    color: #a8995e;
+    padding: 1%;
+}
+.forQuestionHead{
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 24px;
+    color: #4A4A4A;
+}
+.forDisBorder{
+    border: 1px solid rgb(208, 208, 208);
+    border-top: none !important;
+    margin-bottom: 3%; 
+}
+.forDisMargine{
+    margin: 3% 0%;
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 17px;
+    color: #43423D;
+    line-height: 25px;
+}
+.forInput{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius:0px; 
+}
+.forInput:focus{
+    box-shadow:none;
+}
+.forLabel{
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 18px;
+    color: #43423D;
+    padding: 5% 0%;
+}
+.toAppendIconInInput{
+    font-size: 30px;
+    border-bottom: 1px solid #ccc;
+    color: #43423D;
+}
+.forSmallMargin{
+    margin: 5% 0% 0%;
+}
+.forInnerSmallMargin{
+    margin: 3% 0%
+}
+.forSlash{
+    font-size: 35px;
+    vertical-align: middle;
+    color: #2d7f2d;
+    padding: 0px 5%;
+}
+.toChangeColor{
+    border: 2px solid #ff6e04 !important;  
+    color: #fff !important;
+    background-color: #ff6e04 !important;
+}
+//for Radio button
+
+.forRadioBtn[type='radio'] {
+    -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    border:2px solid #2d7f2d;
+    border-radius:50%;
+    outline:none;
+}
+.forRadioBtn[type='radio']:before {
+    content:'';
+    display:block;
+    width:60%;
+    height:60%;
+    margin: 20% auto;    
+    border-radius:50%;    
+}
+.forRadioBtn[type='radio']:checked:before {
+    background:#2d7f2d;
+}
+// for checkbox
+/* The container */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "Roboto Regular", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #2d7f2d; 
+    border-radius:5px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-container:hover input ~ .checkbox-checkmark {
+    background-color: #fff;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkbox-checkmark {
+    background-color: #fff;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkbox-checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkbox-checkmark:after {
+    left: 10px;
+    top: -9px;
+    width: 13px;
+    height: 25px;
+    border: solid #2d7f2d;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+@media (max-width: 576px){
+    .forCircle{
+        padding: 5px 10px;
+    }
+}
+@media (max-width:768px){
+    .forProgressText{
+        font-size: 10px;
+    }
+}
+
+// for section
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-step a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stepwizard-row:before {
+    top: 12px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 87%;
+    height: 3px;
+    background-color: #ccc;
+    margin: 0px 0px 0px 10%;
+
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+@media (max-width: 575.98px) { 
+    .toHideInSmallScreens{
+        display: none;
+    }
+    .toShowInSmallScreen{
+        display: show;
+    }
+}
+@media (min-width:768px){
+    .toShowInSmallScreen{
+        display: none;
+    }
+}

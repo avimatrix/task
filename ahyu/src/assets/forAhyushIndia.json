@@ -1,0 +1,1184 @@
+{
+  "name": "AHYUSH INDIA HRA",
+  "version": "1.0",
+  "description": "HRA For Ahyush India",
+  "active": true,
+  "locale":["en_IN","hi_IN"],
+  "sections": [
+    {
+      "code": "SDGR",
+      "title": "Sociodemographic",
+      "description": "Sociodemographic",
+      "serialNo": 1,
+      "questions": [
+        {
+          "code": "SDGR0001",
+          "title": "Marital Status",
+          "description": "Marital Status",
+          "serialNo": 1,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "Marital Status",
+              "label": "Marital Status",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Married",
+                  "value": "married" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "Single",
+                  "value": "single" 
+                },
+                {
+                  "serialNo": 3,
+                  "label": "Divorced",
+                  "value": "divorced" 
+                },
+                {
+                  "serialNo": 4,
+                  "label": "Widowed",
+                  "value": "widowed" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Employment Status",
+          "description": "Employment Status",
+          "serialNo": 2,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "Employment Status",
+              "label": "Employment Status",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Employed",
+                  "value": "employed" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "Self Employed",
+                  "value": "self_employed" 
+                },
+                {
+                  "serialNo": 3,
+                  "label": "Retired",
+                  "value": "retired" 
+                },
+                {
+                  "serialNo": 4,
+                  "label": "Unemployed",
+                  "value": "unemployed" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Education",
+          "description": "Education",
+          "serialNo": 3,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "Education",
+              "label": "Education",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Non-formal",
+                  "value": "non_formal" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "High School",
+                  "value": "high_school" 
+                },
+                {
+                  "serialNo": 3,
+                  "label": "Graduate",
+                  "value": "graduate" 
+                },
+                {
+                  "serialNo": 4,
+                  "label": "Post Graduate",
+                  "value": "post_graduate" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Household Income",
+          "description": "Household Income",
+          "serialNo": 4,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "currency",
+              "name": "Household Income",
+              "label": "Household Income",
+              "rangeMin": " ",
+              "rangeMax": " ",
+              "defaultUnit": "Per Annum",
+              "units": [
+                {
+                  "symbol": "Per Annum",
+                  "name": "Per Annum",
+                  "pluralName": "Per Annum"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Date Of Birth",
+          "description": "Date Of Birth",
+          "serialNo": 5,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "date",
+              "name": "Date Of Birth",
+              "label": "Date Of Birth",
+              "rangeMin": " ",
+              "rangeMax": " "
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Gender",
+          "description": "Gender",
+          "serialNo": 6,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "Gender",
+              "label": "Gender",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Male",
+                  "value": "male" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "Female",
+                  "value": "female" 
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BMET",
+      "title": "Biometrics",
+      "description": "Biometrics",
+      "serialNo": 2,
+      "questions": [
+        {
+          "code": "AWLM0001",
+          "title": "Height",
+          "description": "Height",
+          "active": true,
+          "serialNo": 1,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "height",
+              "label": "Height",
+              "serialNo": 1,
+              "rangeMin": "20",
+              "rangeMax": "300",
+              "defaultUnit": "in",
+              "units": [
+                {
+                  "symbol": "in",
+                  "name": "inch",
+                  "pluralName": "inches"
+                },
+                {
+                  "symbol": "cm",
+                  "name": "centimeter",
+                  "pluralName": "centimeters"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0002",
+          "title": "Weight",
+          "description": "Weight",
+          "serialNo": 2,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "weight",
+              "label": "Weight",
+              "serialNo": 1,
+              "rangeMin": "20",
+              "rangeMax": "500",
+              "defaultUnit": "kg",
+              "units": [
+                {
+                  "symbol": "kg",
+                  "name": "kilogram",
+                  "pluralName": "kilograms"
+                },
+                {
+                  "symbol": "lb",
+                  "name": "pound",
+                  "pluralName": "pounds"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0003",
+          "title": "Waist Circumference",
+          "description": "Waist",
+          "serialNo": 3,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 2,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "waist",
+              "label": "Waist",
+              "rangeMin": "20",
+              "rangeMax": "1000",
+              "defaultUnit": "in",
+              "units": [
+                {
+                  "symbol": "in",
+                  "name": "inch",
+                  "pluralName": "inches"
+                },
+                {
+                  "symbol": "cm",
+                  "name": "centimeter",
+                  "pluralName": "centimeters"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0006",
+          "title": "Blood Pressure",
+          "description": "Blood Pressure",
+          "serialNo": 4,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "systolic",
+              "label": "Systolic",
+              "rangeMin": "10",
+              "rangeMax": "200",
+              "units": [
+                {
+                  "symbol": "mmHg",
+                  "name": "mmHG",
+                  "pluralName": ""
+                }
+              ]
+            },
+            {
+              "serialNo": 2,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "diastolic",
+              "label": "Diastolic",
+              "rangeMin": "10",
+              "rangeMax": "200",
+              "units": [
+                {
+                  "symbol": "mmHg",
+                  "name": "mmHG",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0006",
+          "title": "Blood Glucose",
+          "description": "Blood Glucose",
+          "serialNo": 5,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "fasting",
+              "label": "Fasting",
+              "rangeMin": "50",
+              "rangeMax": "500",
+              "units": [
+                {
+                  "symbol": "mg/dl",
+                  "name": "mg/dl",
+                  "pluralName": ""
+                }
+              ]
+            },
+            {
+              "serialNo": 2,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "random",
+              "label": "Random",
+              "rangeMin": "50",
+              "rangeMax": "600",
+              "units": [
+                {
+                  "symbol": "mg/dl",
+                  "name": "mg/dl",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0012",
+          "title": "Total Cholesterol",
+          "description": "Total Cholesterol",
+          "serialNo": 6,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "total_cholesterol",
+              "label": "Total Cholesterol",
+              "units": [
+                {
+                  "symbol": "mg/dL",
+                  "name": "mg/dl",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0012",
+          "title": "HDL",
+          "description": "HDL",
+          "serialNo": 7,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "HDL",
+              "label": "HDL",
+              "units": [
+                {
+                  "symbol": "mg/dL",
+                  "name": "mg/dl",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0012",
+          "title": "LDL",
+          "description": "LDL",
+          "serialNo": 8,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "LDL",
+              "label": "LDL",
+              "units": [
+                {
+                  "symbol": "mg/dL",
+                  "name": "mg/dl",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0012",
+          "title": "Triglycerides",
+          "description": "triglycerides",
+          "serialNo": 9,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "Triglycerides",
+              "label": "Triglycerides",
+              "units": [
+                {
+                  "symbol": "mg/dL",
+                  "name": "mg/dl",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0012",
+          "title": "HbA1c",
+          "description": "HbA1c",
+          "serialNo": 10,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "weeks",
+              "label": "Weeks",
+              "units": [
+                {
+                  "symbol": "",
+                  "name": "",
+                  "pluralName": ""
+                }
+              ]
+            },
+            {
+              "serialNo": 2,
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "HbA1c",
+              "label": "HbA1c",
+              "rangeMin": "",
+              "rangeMax": "",
+              "units": [
+                {
+                  "symbol": "%",
+                  "name": "percentage",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MH",
+      "title": "Mental Health",
+      "description": "Mental Health",
+      "serialNo": 3,
+      "questions":[
+        {
+          "code": "AWLM0016",
+          "title": "Have you noticed an increase in symptoms such as stomach upset, headache, or neck/back pain?",
+          "description": "Have you noticed an increase in symptoms such as stomach upset, headache, or neck/back pain?",
+          "serialNo": 1,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "symptoms_of_genral_pains",
+              "label": "Have you noticed an increase in symptoms such as stomach upset, headache, or neck/back pain?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Have you noticed any change in the way you use alcohol or prescription medicines?",
+          "description": "Have you noticed any change in the way you use alcohol or prescription medicines?",
+          "serialNo": 2,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "diffrent_impact_of_medicines",
+              "label": "Have you noticed any change in the way you use alcohol or prescription medicines?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        }
+      ] 
+    },
+    {
+      "code": "H",
+      "title": "Health",
+      "description": "Health",
+      "serialNo": 4,
+      "questions":[
+        {
+          "code": "AWLM0016",
+          "title": "Do you have any allergies?",
+          "description": "Do you have any allergies?",
+          "serialNo": 1,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "allergies",
+              "label": "Do you have any allergies?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Please pick the ailments you currently have. Are you being treated at present?",
+          "description": "Please pick the ailments you currently have. Are you being treated at present?",
+          "serialNo": 2,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Arthritis",
+              "name": "arthritis",
+              "value": null
+            },
+            {
+              "serialNo": 2,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Back Pain/Neck Pain",
+              "name": "back_pain/neck _pain",
+              "value": null
+            },
+            {
+              "serialNo": 3,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Cancer",
+              "name": "cancer",
+              "value": null
+            },
+            {
+              "serialNo": 4,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Chronic Lung Disease",
+              "name": "chronic _lung_disease",
+              "value": null
+            },
+            {
+              "serialNo": 5,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Heart Problem",
+              "name": "heart_problem",
+              "value": null
+            },
+            {
+              "serialNo": 6,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "High Blood Pressure",
+              "name": "high_blood_pressure",
+              "value": null
+            },
+            {
+              "serialNo": 7,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Sleep Apnea",
+              "name": "sleep_apnea",
+              "value": null
+            },
+            {
+              "serialNo": 8,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Other sleep disorder",
+              "name": "other_sleep_disorder",
+              "value": null
+            },
+            {
+              "serialNo": 9,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Diabetes",
+              "name": "diabetes",
+              "value": null
+            },
+            {
+              "serialNo": 10,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Pre-Diabetic",
+              "name": "pre-diabetic",
+              "value": null
+            },
+            {
+              "serialNo": 11,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "High Cholesterol",
+              "name": "high_cholesterol",
+              "value": null
+            },
+            {
+              "serialNo": 12,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Depression?",
+              "name": "depression",
+              "value": null
+            },
+            {
+              "serialNo": 13,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Stroke",
+              "name": "stroke",
+              "value": null
+            },
+            {
+              "serialNo": 14,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Osteoporosis",
+              "name": "osteoporosis",
+              "value": null
+            },
+            {
+              "serialNo": 15,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Thyroid Disorder",
+              "name": "thyroid_disorder",
+              "value": null
+            },
+            {
+              "serialNo": 16,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Heartburn/Acid Reflux",
+              "name": "heartburn/acid_reflux",
+              "value": null
+            },
+            {
+              "serialNo": 17,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Migraine/Headaches",
+              "name": "migraine/headaches",
+              "value": null
+            },
+            {
+              "serialNo": 18,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Asthma",
+              "name": "asthma",
+              "value": null
+            },
+            {
+              "serialNo": 19,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "Other?",
+              "name": "other",
+              "value": null
+            },
+            {
+              "serialNo": 20,
+              "choiceType": "CB",
+              "valueType": "string",
+              "label": "None",
+              "name": "none",
+              "value": null
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Menopause?",
+          "description": "Menopause?",
+          "serialNo": 3,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "menopause",
+              "label": "Menopause?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        }
+      ] 
+    },
+    {
+      "code": "SH",
+      "title": "Social Habits",
+      "description": "Social Habits",
+      "serialNo": 5,
+      "questions": [
+        {
+          "code": "AWLM0016",
+          "title": "Do you currently use tobacco products in any form?",
+          "description": "Do you currently use tobacco products in any form?",
+          "serialNo": 1,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "tobacco_products",
+              "label": "Do you currently use tobacco products in any form?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Do you consume alcoholic beverages?",
+          "description": "Do you consume alcoholic beverages?",
+          "serialNo": 2,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "alcoholic_consumption",
+              "label": "Do you consume alcoholic beverages?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "EH",
+      "title": "Eating Habits",
+      "description": "Eating Habits",
+      "serialNo": 6,
+      "questions": [
+        {
+          "code": "AWLM0001",
+          "title": "On an average, how many servings of fruits and vegetables do you eat?",
+          "description": "On an average, how many servings of fruits and vegetables do you eat?",
+          "active": true,
+          "serialNo": 1,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "servings",
+              "label": "Servings",
+              "serialNo": 1,
+              "defaultUnit": "",
+              "units": [
+                {
+                  "symbol": "Per Day",
+                  "name": "per_day",
+                  "pluralName": ""
+                },
+                {
+                  "symbol": "Per Week",
+                  "name": "per_week",
+                  "pluralName": ""
+                },
+                {
+                  "symbol": "Per Month",
+                  "name": "per_month",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0001",
+          "title": "How many servings of whole grains do you eat, on an average?",
+          "description": "How many servings of whole grains do you eat, on an average?",
+          "active": true,
+          "serialNo": 2,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "servings",
+              "label": "Servings",
+              "serialNo": 1,
+              "defaultUnit": "",
+              "units": [
+                {
+                  "symbol": "Per Day",
+                  "name": "per_day",
+                  "pluralName": ""
+                },
+                {
+                  "symbol": "Per Week",
+                  "name": "per_week",
+                  "pluralName": ""
+                },
+                {
+                  "symbol": "Per Month",
+                  "name": "per_month",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Do you eat meat or meat products?",
+          "description": "Do you eat meat or meat products?",
+          "serialNo": 3,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "meat_products",
+              "label": "Do you eat meat or meat products?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Do you drink coffee/tea?",
+          "description": "Do you drink coffee/tea?",
+          "serialNo": 4,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "coffee_tea",
+              "label": "Do you drink coffee/tea?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0016",
+          "title": "Do you consume soft drinks?",
+          "description": "Do you consume soft drinks?",
+          "serialNo": 5,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "soft_drinks",
+              "label": "Do you consume soft drinks?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "title": "Activity",
+      "description": "Activity",
+      "serialNo": 7,
+      "questions": [
+        {
+          "code": "AWLM0016",
+          "title": "Do you exercise?",
+          "description": "Do you exercise?",
+          "serialNo": 1,
+          "active": true,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "serialNo": 1,
+              "choiceType": "RB",
+              "valueType": "string",
+              "name": "exercise",
+              "label": "Do you exercise?",
+              "options": [
+                {
+                  "serialNo": 1,
+                  "label": "Yes",
+                  "value": "yes" 
+                },
+                {
+                  "serialNo": 2,
+                  "label": "No",
+                  "value": "no" 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0001",
+          "title": "Number of physically inactive hours a day?",
+          "description": "Number of physically inactive hours a day?",
+          "active": true,
+          "serialNo": 2,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "hours",
+              "label": "Hours",
+              "serialNo": 1,
+              "defaultUnit": "",
+              "units": [
+                {
+                  "symbol": "Hours",
+                  "name": "hours",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AWLM0001",
+          "title": "On an average, how many hours a day do you spend watching television?",
+          "description": "On an average, how many hours a day do you spend watching television?",
+          "active": true,
+          "serialNo": 3,
+          "gender": "BOTH",
+          "imagePath":"",
+          "choices": [
+            {
+              "choiceType": "TT",
+              "valueType": "integer",
+              "name": "television",
+              "label": "Television",
+              "serialNo": 1,
+              "defaultUnit": "",
+              "units": [
+                {
+                  "symbol": "Hours",
+                  "name": "hours",
+                  "pluralName": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

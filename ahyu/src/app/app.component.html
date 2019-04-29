@@ -1,0 +1,212 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row forMargin">
+      <!-- <app-ahyush-flow></app-ahyush-flow> -->
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-6 text-fight">
+            <div class="progress">
+              <div class="progress-bar forProgress" style="width: 12%" role="progressbar" aria-valuenow="12"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="forProgressText">
+              <span class="pull-left">TOTAL ANSWERED</span>
+              <span class="pull-right" style="color: #ff6e04">12%</span>
+            </div>
+          </div>
+          <div class="col-6 text-left">
+            <button class="getResultBtn">GET RESULT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row forMargin toHideInSmallScreens">
+      <div class="stepwizard">
+        <div class="stepwizard-row setup-panel">
+          <div class="stepwizard-step">
+            <a (click)='getActivites("SDGR")'><span class="forCircle">1</span></a>
+            <p>Sociodemographic</p>
+          </div>
+          <div class="stepwizard-step">
+            <a (click)='getActivites("BMET")'><span class="forCircle">2</span></a>
+            <p>Biometrics</p>
+          </div>
+          <div class="stepwizard-step">
+            <a (click)='getActivites("MH")'><span class="forCircle">3</span></a>
+            <p>Mental Health</p>
+          </div>
+          <div class="stepwizard-step">
+            <a (click)='getActivites("H")'><span class="forCircle">4</span></a>
+            <p>Health</p>
+          </div>
+          <div class="stepwizard-step">
+            <a (click)='getActivites("SH")'><span class="forCircle">5</span></a>
+            <p>Social Habits</p>
+          </div>
+          <div class="stepwizard-step">
+            <a (click)='getActivites("EH")'><span class="forCircle">6</span></a>
+            <p>Eating Habits</p>
+          </div>
+          <div class="stepwizard-step">
+            <a (click)='getActivites("A")'><span class="forCircle">7</span></a>
+            <p>Activity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row forSmallMargin toShowInSmallScreen">
+      <div class="col-12 text-center"><span class="forCircle toChangeColor">1</span><span class="forSlash">/</span><span
+          class="forCircle">7</span></div>
+      <div class="col-12 text-center forInnerSmallMargin">
+        <p>Sociodemographic</p>
+      </div>
+    </div>
+
+    <div class="section">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 toHideInSmallScreens">
+            <img class="mx-auto d-block" src="./assets/resources/img/marital_images_leftside.png" alt="">
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <!-- <div *ngIf="prevQuestion(i)||nxtQuestion(i)">   -->
+            <div class="row text-center">
+              <div class="col">
+                <span class="forQuestion">{{question.title}}</span><span class="forStar">* </span><span><i class="la la-info-circle forIcon"></i></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 toShowInSmallScreen">
+                <img class="mx-auto d-block" src="./assets/resources/img/marital_images_leftside.png" alt="">
+              </div>
+            </div>
+            <!-- for radio buttons -->
+            <div *ngFor="let choice of question?.choices">
+              <div class="row justify-content-center forInputMargin">
+                <div class="text-center forLeftRightMargin" *ngFor="let option of choice?.options">
+                  <div *ngIf="choice.choiceType == 'RB'">
+
+                    <input class="forRadioBtn" type='radio' name='{{option.name}}' value="{{option.value}}" [(ngModel)]="choice.value">
+                    <div>{{option.label}}</div>
+                  </div>
+                </div>
+              </div>
+              <!-- for one input field -->
+              <div class="row justify-content-center forInputMargin" *ngIf="(choice.label == 'Date Of Birth') && (question.questionType =='TI')">
+                <form>
+                  <div class="form-group form-row">
+                    <div class="col-12 input-group-append">
+                      <input type="text" class="form-control forInput" placeholder="">
+
+                      <div class="input-group-append">
+                        <i class="la toAppendIconInInput la-calendar"></i>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- for one input field and lable or dropdown -->
+              <!-- <div class="row justify-content-center forInputMargin">
+          <form>
+              <div class="form-group form-row">
+                  <div class="col-7 offset-md-2 col-md-6">
+                    <input type="text" class="form-control forInput" placeholder="">
+                  </div>
+                  <div class="col-5 col-md-4 text-center">
+                    if there is a leble
+                   <label class="forLabel" for="groupName">Per Annum</label>
+                    if there is a dropdown
+                    <select class="form-control forInput">
+                        <option>select</option>
+                      </select>
+                  </div>
+                </div>
+          </form>
+        </div> -->
+              <!-- for two input fields and a lable or dropdoen -->
+              <div class="row justify-content-center forInputMargin" *ngIf="choice.choiceType =='TT'">
+                <form>
+                  <div class="form-group form-row">
+                    <div class="col-4 col-md-4">
+                      <input type="text" class="form-control forInput" placeholder="">
+                    </div>
+                    <div class="col-4 col-md-4">
+                      <input type="text" class="form-control forInput" placeholder="">
+                    </div>
+                    <div class="col-4 col-md-3 text-center">
+                      <!-- <label class="forLabel" for="groupName">Per Annum</label>  -->
+                      <!-- if there is a dropdown  -->
+                      <select class="form-control forInput">
+                        <option>select</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- for checkboxs -->
+              <div class="row justify-content-center forInputMargin" *ngIf="choice.choiceType =='CB'">
+          <form>
+            <div class="form-group form-row">
+              <div class="col-6 col-md-4">
+                <label class="checkbox-container">One
+                  <input type="checkbox">
+                  <span class="checkbox-checkmark"></span>
+                </label>
+              </div>
+              <!-- <div class="col-6 col-md-4">
+                <label class="checkbox-container">One
+                  <input type="checkbox">
+                  <span class="checkbox-checkmark"></span>
+                </label>
+              </div>
+              <div class="col-6 col-md-4">
+                <label class="checkbox-container">One
+                  <input type="checkbox">
+                  <span class="checkbox-checkmark"></span>
+                </label>
+              </div>
+              <div class="col-6 col-md-4">
+                <label class="checkbox-container">One
+                  <input type="checkbox">
+                  <span class="checkbox-checkmark"></span>
+                </label>
+              </div> -->
+            </div>
+          </form>
+        </div>
+            </div>
+            <div class="row forMargin">
+              <div class="col text-right">
+                <button class="HRAButton" (click)='prevQuestion()'>PREVIOUS</button>
+              </div>
+              <div class="col text-left">
+                <button class="HRAButton forHRANextButton" (click)='nxtQuestion()'>NEXT</button>
+              </div>
+            </div>
+            <div class="row forMargin">
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar forProgressBar" role="progressbar" style="width: 16.66%;" aria-valuenow="1"
+                    aria-valuemin="0" aria-valuemax="6">{{count+1}}</div>
+                </div>
+              </div>
+            </div>
+       <!--  </div> if condtion-->
+          </div>
+        </div>
+    </div>
+    <!--section for loop -->
+    <div class="row forBorder">
+      <div class="d-flex justify-content-start">
+        <div class="borderToIcon p-3"><i class="la la-info-circle forDisIcon"></i></div>
+        <div class="forQuestionHead p-3">I do!</div>
+      </div>
+    </div>
+    <div class="row forDisBorder">
+      <div class="col text-center forDisMargine">
+        Your marital status impacts your mental and physical health.
+      </div>
+    </div>
+  </div>
+</div>
